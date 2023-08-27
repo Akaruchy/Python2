@@ -1,12 +1,12 @@
-#  Напишите программу, которая получает целое число и возвращает его шестнадцатеричное
+# Напишите программу, которая получает целое число и возвращает его шестнадцатеричное
 # строковое представление. Функцию hex используйте для проверки своего результата.
 
-number = int(input("Введите число: "))
-n = ''
+num_dec = int(input("Введите число: "))
+res = ''
 DIVIDER = 16
-
-while number > 0:
-    add_num = str(number % DIVIDER)
+print(hex(num_dec))
+while num_dec > 0:
+    add_num = str(num_dec % DIVIDER)
     if add_num == '10':
         add_num = 'a' 
     elif add_num == '11':
@@ -19,7 +19,6 @@ while number > 0:
         add_num = 'e'
     elif add_num == '15':
         add_num = 'f'
-    n = add_num + n
-    number = number // DIVIDER
-
-print("Шестнадцатиричное представления числа", n)
+    res = add_num + res
+    num_dec = num_dec // DIVIDER
+print(res)
