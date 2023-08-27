@@ -4,8 +4,8 @@
 
 import fractions
 
-n_1, n_2 = map(int, input("Введите строку формата a/b: ").split("/"))
-n_3, n_4 = map(int, input("Введите строку формата a/b: ").split("/"))
+n_1, n_2 = map(int, input("Введите первую дробь вида a/b: ").split("/"))
+n_3, n_4 = map(int, input("Введите вторую дробь вида a/b: ").split("/"))
 
 numerator = n_1 * n_4 + n_2 * n_3
 denominator = n_2 * n_4
